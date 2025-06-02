@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rojin ❤️ Şehmus</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #ffe6eb, #fff);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      color: #d6336c;
+      text-align: center;
+      padding: 30px;
+    }
+    h1 {
+      font-size: 3em;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+    .gif {
+      width: 250px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    button {
+      margin: 10px;
+      padding: 15px 30px;
+      font-size: 1em;
+      border: none;
+      border-radius: 12px;
+      background-color: #ff4d79;
+      color: white;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    button:hover {
+      background-color: #e6004d;
+      transform: scale(1.05);
+    }
+    #message {
+      margin-top: 30px;
+      font-size: 1.3em;
+      background: #fff0f5;
+      border-radius: 10px;
+      padding: 20px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    audio {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>💖 Rojin & Şehmus 💖</h1>
+  <p>Birlikte her gün biraz daha güzelleşen bir aşkın hikayesi...</p>
+
+  <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTE0enA0a3JyY3RhcW44anlxOWFld2I3NGJ6eWxlcmJuM3VnemhveSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26xBFT1F9BgskEvTO/giphy.gif" class="gif" alt="çift gifi">
+
+  <div>
+    <button onclick="showMessage()">❤️ Aşklarını Oku ❤️</button>
+    <button onclick="showMessage()">🌹 Anılarını Hisset 🌹</button>
+    <button onclick="showMessage()">💌 Kalpten Gelenler 💌</button>
+    <button onclick="showMessage()">🌟 Sonsuz Sevgi 🌟</button>
+  </div>
+
+  <div id="message"></div>
+
+  <audio controls autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg">
+    Tarayıcınız ses çalmayı desteklemiyor.
+  </audio>
+
+  <script>
+    const messages = [
+      "Seni düşünmediğim bir an, bir anım yok kör olayım Dağlar bile sarsılıyor gönlümün ağırlığından Rüzgara vuruyorum kendimi belki sıyırır diye Ruhumu inciten hürmütsüz sevginin kurbanıyım ben Her sağanak yağmurda ıslanırım iliklerime dek Belki çeker götürür diye içimde ki bu hasretini Faydasız!!! Kenetlenmişsin kalbime İlmek ilmek işlenmiş gibisin hasretinle yüreğime Nereye böyle bileyim söyle Suskunluğunun itirafıdır vefasızlığına Yoksa bir hayat böyle yoksa yar mıydı? Hadi git! Hiç durma mühim değil vefa borcun yok Hadi git! Aldırma bırak umutlarım kararsın. 💕",
+    ];
+
+    function showMessage() {
+      const messageBox = document.getElementById('message');
+      const random = Math.floor(Math.random() * messages.length);
+      messageBox.innerHTML = messages[random];
+    }
+  </script>
+
+</body>
+</html>
