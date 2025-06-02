@@ -7,7 +7,7 @@
   <style>
     body {
       background: linear-gradient(to right, #ffe6eb, #fff);
-      font-family: 'Comic Sans MS', cursive, sans-serif;
+      font-family: "Segoe UI", Arial, sans-serif;
       color: #d6336c;
       text-align: center;
       padding: 30px;
@@ -43,7 +43,7 @@
     }
     #message {
       margin-top: 30px;
-      font-size: 1.3em;
+      font-size: 1.2em;
       background: #fff0f5;
       border-radius: 10px;
       padding: 20px;
@@ -51,6 +51,7 @@
       margin-left: auto;
       margin-right: auto;
       box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      white-space: pre-line;
     }
     audio {
       margin-top: 20px;
@@ -80,7 +81,20 @@
 
   <script>
     const messages = [
-      "Seni düşünmediğim bir an, bir anım yok kör olayım Dağlar bile sarsılıyor gönlümün ağırlığından Rüzgara vuruyorum kendimi belki sıyırır diye Ruhumu inciten hürmütsüz sevginin kurbanıyım ben Her sağanak yağmurda ıslanırım iliklerime dek Belki çeker götürür diye içimde ki bu hasretini Faydasız!!! Kenetlenmişsin kalbime İlmek ilmek işlenmiş gibisin hasretinle yüreğime Nereye böyle bileyim söyle Suskunluğunun itirafıdır vefasızlığına Yoksa bir hayat böyle yoksa yar mıydı? Hadi git! Hiç durma mühim değil vefa borcun yok Hadi git! Aldırma bırak umutlarım kararsın. 💕",
+      `Seni düşünmediğim bir an, bir anım yok kör olayım  
+Dağlar bile sarsılıyor gönlümün ağırlığından  
+Rüzgara vuruyorum kendimi belki sıyırır diye  
+Ruhumu inciten hürmütsüz sevginin kurbanıyım ben  
+Her sağanak yağmurda ıslanırım iliklerime dek  
+Belki çeker götürür diye içimdeki bu hasretini  
+Faydasız!!!  
+Kenetlenmişsin kalbime  
+İlmek ilmek işlenmiş gibisin hasretinle yüreğime  
+Nereye böyle bileyim söyle  
+Suskunluğunun itirafıdır vefasızlığına  
+Yoksa bir hayat böyle yoksa yar mıydı?  
+Hadi git! Hiç durma mühim değil vefa borcun yok  
+Hadi git! Aldırma bırak umutlarım kararsın. 💕`
     ];
 
     function showMessage() {
